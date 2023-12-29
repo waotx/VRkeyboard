@@ -1,0 +1,88 @@
+.keyboard{
+    display: grid;
+    margin: 7px auto;
+    width: 1700px;
+    height: 600px;
+    column-gap: 15px;
+    row-gap: 15px;
+    grid-template-columns: repeat(30, 0.5fr);
+    grid-template-rows: repeat(5, 1fr);
+    user-select: none;
+    color: white;
+}
+.textarea {
+    display: block;
+    width: 50%;
+    height: 100px;
+    margin: 5px  5px;
+    padding: 40px;
+    font-size: 25px;
+    color: #ff0000;
+}
+body{
+    background: rgb(0, 0, 0);
+}
+.key{
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 5px;
+    position: relative;
+    transition: 0.7s;
+}
+.keySymbol_upper{
+    position: absolute;
+    top: 1px;
+}
+.clickActive{
+    background: rgb(15, 169, 230);
+}
+.active{
+    background: rgb(15, 169, 230);
+}
+.key2{
+    grid-column: span 2;
+}
+.key3{
+    grid-column: span 3;
+}
+.key4{
+    grid-column: span 4;
+}
+.key12{
+    grid-column: span 12;
+}
+.key{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.keySymbol{
+    font-size: 30px;
+}
+.themes{
+    display: flex;
+    justify-content: center;
+}
+.keytheme{
+    width: 200px;
+    height: 70px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.t1{
+    border: solid 5px rgb(0, 0, 0);
+    color: white;
+    background: rgb(95, 96, 97);
+}
+.t2{
+    border: solid 5px rgb(39, 207, 137);
+    color: yellow;
+    background: rgb(102, 114, 79);
+}
+.t3{
+    border: solid 5px rgb(216, 93, 10);
+    color: brown;
+    background: rgb(12, 4, 24);
+}
